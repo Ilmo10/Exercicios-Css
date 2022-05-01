@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  
+}
+body{
+  background: url(img/degrade-background-12685.jpg);
+}
+body h1{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  .box {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  
+  }
+
+.list{
+  list-style: none;
+  text-align: center;
+}
+.link{
+  display: inline-block;
+  margin-block: 2px; 
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.link::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.link:hover::after{
+transform: scaleX(1);
+}
