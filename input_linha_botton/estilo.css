@@ -31,7 +31,11 @@ input{
   width: 290px;
   height: 30px;
   font-size: medium;
-
+  padding: 0 10px;
+}
+input:focus{
+  outline: none;
+  padding: 0 10px;
 }
 button{
   margin-left: 73px;
@@ -48,5 +52,6 @@ button:hover{
  border: 1px solid #fff; 
  cursor: pointer;
 }
+
 
 

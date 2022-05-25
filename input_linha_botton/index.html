@@ -4,6 +4,7 @@
         <title>Input linha botton</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        
     </head>
     <body>
       <div class="container">
@@ -11,15 +12,17 @@
           <h1>Sign Up</h1>
 
           <form action="">
-            <label for="nome">Name</label></br>
-            <input type="email">
-          </form>
-          <form action="">
-            <label for="password">Password</label></br>
-            <input type="password">
+            <label name="nome">Name</label></br>
+            <input type="name" id="name">
+            <label name="password">Password</label></br>
+            <input type="password" name="password" id="pass">
           </form>
 
-          <button>Login</button>
+          <button onClick="botao()">Login</button>
+
+          
       </div>
+
+      <script src="script.js"></script>
     </body>
 </html>
